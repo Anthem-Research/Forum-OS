@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+# Runtime integrity hashes are byte-for-byte, including the original line endings.
+design-preview/** -text

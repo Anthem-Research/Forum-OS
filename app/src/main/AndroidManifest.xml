@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <queries>
+        <intent><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent>
+        <intent><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.HOME" /></intent>
+        <intent><action android:name="android.settings.SETTINGS" /></intent>
+    </queries>
+    <application android:label="@string/app_name" android:allowBackup="false" android:testOnly="${forumTestOnly}"
+        android:supportsRtl="true" android:theme="@style/Theme.Forum.Home"
+        android:enableOnBackInvokedCallback="false">
+        <activity android:name=".HomeActivity" android:exported="true" android:launchMode="singleTask"
+            android:screenOrientation="landscape" android:resizeableActivity="true" android:lockTaskMode="if_whitelisted">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.HOME" /><category android:name="android.intent.category.DEFAULT" /></intent-filter>
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+        <activity android:name=".ParentGateActivity" android:exported="false" android:excludeFromRecents="true" />
+        <activity android:name=".ParentActivity" android:exported="false" android:theme="@style/Theme.Forum.Parent" />
+        <activity android:name=".AppPickerActivity" android:exported="false" android:theme="@style/Theme.Forum.Parent" />
+        <activity android:name=".ChangePinActivity" android:exported="false" android:theme="@style/Theme.Forum.Parent" />
+        <receiver android:name=".ForumAdminReceiver" android:exported="true" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin" />
+            <intent-filter><action android:name="android.app.action.DEVICE_ADMIN_ENABLED" /><action android:name="android.app.action.PROFILE_PROVISIONING_COMPLETE" /></intent-filter>
+        </receiver>
+        <receiver android:name=".RecoveryReceiver" android:exported="false">
+            <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED" /><action android:name="android.intent.action.MY_PACKAGE_REPLACED" /></intent-filter>
+        </receiver>
+    </application>
+</manifest>

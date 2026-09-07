@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Forum.Home" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/forum_ink</item>
+        <item name="android:statusBarColor">@color/forum_ink</item>
+        <item name="android:windowBackground">@color/forum_ink</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Theme.Forum.Parent" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/forum_parent_paper</item>
+        <item name="android:statusBarColor">@color/forum_parent_paper</item>
+        <item name="android:windowBackground">@color/forum_parent_paper</item>
+    </style>
+
+    <style name="ForumParentAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/forum_ink</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+    <style name="ForumAssignmentAction" parent="ForumParentAction">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/forum_muted</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="PinKey">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/inter_variable</item>
+        <item name="android:textColor">@color/forum_paper</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="PinKeySmall" parent="PinKey">
+        <item name="android:textColor">#B9C0BB</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:letterSpacing">0.12</item>
+    </style>
+</resources>
+

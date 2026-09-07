@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.forum.os.ForumHomeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forum_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forum_ink"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/forum_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextClock
+            android:id="@+id/forum_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_variable"
+            android:format12Hour="HH:mm"
+            android:format24Hour="HH:mm"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.025"
+            android:textColor="@color/forum_paper"
+            android:textFontWeight="200"
+            android:textSize="70sp" />
+
+        <TextClock
+            android:id="@+id/forum_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_variable"
+            android:format12Hour="EEEE · d MMMM"
+            android:format24Hour="EEEE · d MMMM"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.22"
+            android:textAllCaps="true"
+            android:textColor="@color/forum_paper"
+            android:textFontWeight="500"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forum_wordmark"
+        android:layout_width="160dp"
+        android:layout_height="72dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/parent_controls_accessibility"
+        android:fontFamily="@font/inter_variable"
+        android:gravity="top|end"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.32"
+        android:paddingTop="2dp"
+        android:text="@string/forum_wordmark"
+        android:textColor="@color/forum_paper"
+        android:textFontWeight="500"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/forum_actions"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/action_ask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="@font/inter_variable"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.055"
+                android:text="@string/ask"
+                android:textColor="@color/forum_paper"
+                android:textFontWeight="400"
+                android:textSize="23sp" />
+
+            <View
+                android:id="@+id/dot_ask"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/forum_dot" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/action_draw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_variable"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.055"
+                android:text="@string/draw"
+                android:textColor="@color/forum_paper"
+                android:textFontWeight="400"
+                android:textSize="23sp" />
+
+            <View
+                android:id="@+id/dot_draw"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/forum_dot"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/action_look"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_variable"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.055"
+                android:text="@string/look"
+                android:textColor="@color/forum_paper"
+                android:textFontWeight="400"
+                android:textSize="23sp" />
+
+            <View
+                android:id="@+id/dot_look"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/forum_dot"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/action_synthesis"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_variable"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.055"
+                android:text="@string/synthesis"
+                android:textColor="@color/forum_paper"
+                android:textFontWeight="400"
+                android:textSize="23sp" />
+
+            <View
+                android:id="@+id/dot_synthesis"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/forum_dot"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/action_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_variable"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.055"
+                android:text="@string/play"
+                android:textColor="@color/forum_paper"
+                android:textFontWeight="400"
+                android:textSize="23sp" />
+
+            <View
+                android:id="@+id/dot_play"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/forum_dot"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+</org.forum.os.ForumHomeLayout>
+

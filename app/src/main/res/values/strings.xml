@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Forum OS</string>
+    <string name="forum_wordmark">FORUM</string>
+    <string name="parent_controls_accessibility">Forum. Press and hold for parent controls.</string>
+    <string name="ask">ASK</string>
+    <string name="draw">DRAW</string>
+    <string name="look">LOOK</string>
+    <string name="synthesis">SYNTHESIS</string>
+    <string name="play">PLAY</string>
+    <string name="not_assigned">Not assigned</string>
+    <string name="not_assigned_message">%1$s is not set up.</string>
+    <string name="parent">PARENT</string>
+    <string name="enter_pin">ENTER PIN</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="wait_seconds">WAIT %1$d SECONDS</string>
+    <string name="cancel">CANCEL</string>
+    <string name="delete">DELETE</string>
+    <string name="parent_controls">Parent controls</string>
+    <string name="parent_intro">Choose the one approved destination behind each word. Nothing here is visible on the home screen.</string>
+    <string name="lock_forum">LOCK FORUM</string>
+    <string name="change_pin">CHANGE PIN</string>
+    <string name="android_settings">ANDROID SETTINGS</string>
+    <string name="request_home_role">MAKE FORUM HOME</string>
+    <string name="enable_admin">ENABLE DEVICE ADMIN</string>
+    <string name="relock_device">RELOCK DEVICE</string>
+    <string name="maintenance_exit">EXIT FOR MAINTENANCE</string>
+    <string name="sealed_mode">SEALED MODE</string>
+    <string name="sealed_mode_summary">Prevent Settings factory reset and safe boot. Change your PIN and test parent recovery first. USB debugging remains available for development recovery.</string>
+    <string name="device_owner_active">Device owner active</string>
+    <string name="device_admin_active">Device admin active; full containment is unavailable</string>
+    <string name="standard_launcher_mode">Standard launcher mode; use device-owner provisioning for containment</string>
+    <string name="choose_app">Choose destination for %1$s</string>
+    <string name="new_pin">New PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="save_pin">SAVE PIN</string>
+    <string name="pin_mismatch">PINs must match and contain exactly four digits.</string>
+    <string name="pin_saved">PIN changed.</string>
+    <string name="admin_explanation">Forum uses device-admin privileges only when you enable them. Device-owner provisioning is required for persistent home and kiosk restrictions.</string>
+    <string name="provisioning_complete">Forum management is ready.</string>
+    <string name="assignment_removed">Not assigned</string>
+    <string name="clear_assignment">CLEAR ASSIGNMENT</string>
+</resources>

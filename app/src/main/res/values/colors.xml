@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="forum_ink">#0D1C16</color>
+    <color name="forum_paper">#F5F1E6</color>
+    <color name="forum_parent_paper">#F7F3E9</color>
+    <color name="forum_orange">#EE6B3B</color>
+    <color name="forum_muted">#69756F</color>
+    <color name="forum_line">#24142621</color>
+    <color name="transparent">#00000000</color>
+</resources>
+
