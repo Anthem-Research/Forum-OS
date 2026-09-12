@@ -3,9 +3,18 @@
 local.properties
 *.iml
 **/build/
+# Keep the Next.js /build/[slug] product route in source control.
+!engine/src/app/build/
+!engine/src/app/build/**
 captures/
 .DS_Store
 .tools/
 *.jks
 *.keystore
 artifacts/
+engine/node_modules/
+engine/.next/
+engine/.env.local
+engine/coverage/
+engine/next-env.d.ts
+engine/*.tsbuildinfo

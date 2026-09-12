@@ -1,5 +1,24 @@
 # Forum OS
 
+Forum OS now contains two deliberately separate parts:
+
+- [`app/`](app/) — the quiet native Android launcher and containment client for
+  Atlas's Galaxy Tab;
+- [`engine/`](engine/) — Forum Engine, the networked and locally self-hostable
+  application built around Blocks, Builds, Collections and Connections.
+
+The launcher is a protected doorway. Forum Engine is the persistent environment
+for real work, Nodes, the Network and the curated Library.
+
+## Forum Engine
+
+The Engine foundation implements the revised Forum product architecture in
+strict TypeScript and Next.js. It includes the core graph, child/guardian privacy
+rules, PostgreSQL row-level-security migration, realistic seed Builds and the
+first sparse institutional interface. See the [Engine README](engine/README.md).
+
+---
+
 A quiet Android home for Atlas. Built for the Galaxy Tab S10 Lite, with **The Quiet Axis** as its visual source of truth.
 
 Near-black forest. Warm paper type. A clock and date. Five words: `ASK`, `DRAW`, `LOOK`, `SYNTHESIS`, `PLAY`. One orange dot. No child-facing settings, app drawer, feed, icons, cards or notifications.
