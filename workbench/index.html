@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; worker-src 'self'; connect-src 'none'; object-src 'none'; form-action 'none'; base-uri 'none'">
+  <title>Workbench — Forum</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <span class="wordmark">FORUM</span>
+      <span>WORKBENCH / PRIVATE</span>
+      <span id="storage-state" role="status" aria-live="polite">Opening local workspace…</span>
+    </header>
+    <main>
+      <div class="opening">
+        <p class="eyebrow">01 / WORK IN PROGRESS</p>
+        <h1>Make something.<br>Follow the question.</h1>
+        <p class="intro">A local space for questions, notes, drawings and connected builds. Work is kept in this browser. Sharing is a separate decision.</p>
+      </div>
+      <div class="workbench">
+        <aside class="index" aria-label="Your builds">
+          <div class="index-heading"><h2>Builds</h2><button id="create" type="button">New build +</button></div>
+          <ol id="build-list" class="build-list"></ol>
+          <p class="index-foot">Nothing here is published to Forum.</p>
+        </aside>
+        <section class="editor" aria-label="Selected build">
+          <div id="empty" class="empty">
+            <p>Begin with a question, an observation or a drawing.</p>
+            <button id="create-empty" type="button">Create a build +</button>
+          </div>
+          <div id="active" hidden>
+            <div class="editor-meta">
+              <span id="build-code"></span>
+              <span id="build-updated"></span>
+            </div>
+            <label class="field-label" for="title">Title</label>
+            <input id="title" class="title-input" maxlength="120" autocomplete="off" placeholder="Untitled build">
+            <label class="field-label" for="question">Question</label>
+            <textarea id="question" rows="2" maxlength="1000" placeholder="What are you trying to find out?"></textarea>
+            <label class="field-label" for="notes">Working notes</label>
+            <textarea id="notes" rows="7" maxlength="20000" placeholder="Record what you tried, noticed, measured or changed."></textarea>
+            <div class="section-line"><h2>Drawing</h2><button id="clear-drawing" type="button">Clear drawing</button></div>
+            <canvas id="drawing" width="1000" height="600" aria-label="Draw with a finger, stylus or mouse"></canvas>
+            <p class="hint">Draw with a finger, stylus or mouse. Changes save locally.</p>
+            <div class="section-line"><h2>Connections</h2></div>
+            <div class="link-controls">
+              <label for="reference">Connect another build</label>
+              <select id="reference"></select>
+              <button id="add-reference" type="button">Connect +</button>
+            </div>
+            <ul id="references" class="references"></ul>
+            <div class="section-line"><h2>Versions</h2><button id="save-version" type="button">Save version +</button></div>
+            <ol id="versions" class="versions"></ol>
+            <div class="editor-actions">
+              <button id="fork" type="button">Make a new version of this build ↗</button>
+              <button id="delete" type="button">Delete build</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="archive">
+        <p class="eyebrow">02 / LOCAL ARCHIVE</p>
+        <h2>Take a copy with you.</h2>
+        <p>Download a private backup as a JSON file. It contains every build, drawing and note in this browser. Keep the file on a device you control.</p>
+        <button id="export" type="button">Download private backup ↗</button>
+        <div class="import-row"><label for="import">Restore a private backup into an empty Workbench</label><input id="import" type="file" accept=".json,application/json"></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>FORUM / WORKBENCH</span><span>Made locally. Shared deliberately.</span></footer>
+  </div>
+</body>
+</html>
