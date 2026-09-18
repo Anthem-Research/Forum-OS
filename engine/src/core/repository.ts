@@ -27,6 +27,10 @@ export class ForumRepository {
     return [...this.data.builds, ...this.data.blocks, ...this.data.collections];
   }
 
+  users(): ForumUser[] {
+    return [...this.data.users];
+  }
+
   userById(id: string): ForumUser | undefined {
     return this.data.users.find((user) => user.id === id);
   }
@@ -149,11 +153,3 @@ export class ForumRepository {
 }
 
 export const forumRepository = new ForumRepository(forumSeed);
-
-export function currentActorId(): string {
-  return process.env.FORUM_DEFAULT_ACTOR_ID ?? "atlas";
-}
-
-export function deploymentMode(): "local" | "connected" {
-  return process.env.FORUM_DEPLOYMENT_MODE === "connected" ? "connected" : "local";
-}

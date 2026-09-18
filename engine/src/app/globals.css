@@ -160,6 +160,12 @@ input:focus-visible {
   margin: 0;
 }
 
+.connection-state a {
+  text-decoration: underline;
+  text-decoration-color: var(--orange);
+  text-underline-offset: 0.25em;
+}
+
 main {
   max-width: var(--measure);
   margin: 0 auto;
@@ -704,6 +710,76 @@ a:hover .object-tile {
   text-transform: uppercase;
 }
 
+.session-header {
+  max-width: 70rem;
+  margin-bottom: clamp(4rem, 9vw, 8rem);
+}
+
+.session-header h1 {
+  max-width: 10ch;
+  margin: 1.3rem 0 2.5rem;
+  font-size: clamp(3.5rem, 9vw, 9rem);
+  font-weight: 320;
+  letter-spacing: -0.07em;
+  line-height: 0.86;
+}
+
+.session-header > p:last-child {
+  max-width: 42rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.identity-list {
+  border-top: 1px solid var(--line-strong);
+}
+
+.identity-option {
+  display: grid;
+  min-height: 10rem;
+  align-items: end;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+}
+
+.identity-option h2 {
+  margin: 0.7rem 0;
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-weight: 350;
+  letter-spacing: -0.045em;
+}
+
+.identity-option div > p:last-child {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.identity-option button,
+.clear-identity button {
+  padding: 0.75rem 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.identity-option button:disabled {
+  border-color: transparent;
+  color: var(--ink-soft);
+  cursor: default;
+}
+
+.clear-identity {
+  margin-top: 3rem;
+}
+
 .site-footer {
   display: flex;
   max-width: var(--measure);
@@ -852,6 +928,11 @@ a:hover .object-tile {
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .identity-option {
+    align-items: start;
+    grid-template-columns: 1fr;
   }
 }
 

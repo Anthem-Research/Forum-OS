@@ -1,5 +1,6 @@
+import { currentActorId } from "@/auth/session";
 import { ObjectIndex } from "@/components/ObjectIndex";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
 type SearchPageProps = { searchParams: Promise<{ q?: string | string[] }> };
 
@@ -8,7 +9,7 @@ export const metadata = { title: "Search" };
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const { q } = await searchParams;
   const query = Array.isArray(q) ? q[0] ?? "" : q ?? "";
-  const results = forumRepository.search(query, currentActorId());
+  const results = forumRepository.search(query, await currentActorId());
   return (
     <main className="object-page search-page">
       <form className="search-form" action="/search" role="search">

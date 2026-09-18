@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { currentActorId } from "@/auth/session";
 import { ObjectGrid } from "@/components/ObjectGrid";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
 type CollectionPageProps = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
   const { slug } = await params;
-  return { title: forumRepository.collectionBySlug(slug, currentActorId())?.title ?? "Collection" };
+  return { title: forumRepository.collectionBySlug(slug, await currentActorId())?.title ?? "Collection" };
 }
 
 export default async function CollectionPage({ params }: CollectionPageProps) {
   const { slug } = await params;
-  const actorId = currentActorId();
+  const actorId = await currentActorId();
   const collection = forumRepository.collectionBySlug(slug, actorId);
   if (!collection) notFound();
   const creator = forumRepository.userById(collection.creatorId);
