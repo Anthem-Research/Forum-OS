@@ -1,18 +1,12 @@
 import Link from "next/link";
-import { currentActorId, previewIdentityEnabled } from "@/auth/session";
 import { ObjectGrid } from "@/components/ObjectGrid";
 import { forumRepository } from "@/core/repository";
 
-export default async function HomePage() {
-  const actorId = await currentActorId();
-  const actor = actorId ? forumRepository.userById(actorId) : undefined;
-  const ownWork = forumRepository
-    .accessibleObjects(actorId)
-    .filter((object) => object.creatorId === actorId)
-    .slice(0, 4);
-  const selected = forumRepository.selected(actorId).slice(0, 4);
+export default function HomePage() {
+  const publicWork = forumRepository.accessibleObjects(null).slice(0, 4);
+  const selected = forumRepository.selected(null).slice(0, 4);
   const network = forumRepository
-    .builds(actorId)
+    .builds(null)
     .filter((build) => build.visibility === "network")
     .slice(0, 4);
 
@@ -25,22 +19,18 @@ export default async function HomePage() {
           <br /> tested and changed.
         </h1>
         <p className="opening-note">
-          {actor
-            ? `${actor.displayName}’s private work and the parts of Forum Plett currently visible to this household.`
-            : "Only explicitly public work is visible without a household or Network session."}
+          Forum begins with physical work in Plett. Only deliberately public records appear here;
+          working material remains in the private workspace on your device.
         </p>
+        <Link className="opening-action" href="/workspace">Open private workspace</Link>
       </section>
 
       <section className="content-section" aria-labelledby="your-work-title">
         <header className="section-header">
-          <h2 id="your-work-title">{actor ? "Recent from your work" : "Public work"}</h2>
-          {actor ? (
-            <Link href={`/person/${actor.username}`}>Open body of work</Link>
-          ) : previewIdentityEnabled() ? (
-            <Link href="/session">Choose preview identity</Link>
-          ) : null}
+          <h2 id="your-work-title">Public work</h2>
+          <span>Nothing is published by default</span>
         </header>
-        <ObjectGrid objects={ownWork} />
+        <ObjectGrid objects={publicWork} />
       </section>
 
       <section className="content-section" aria-labelledby="selected-title">

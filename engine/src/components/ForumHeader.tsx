@@ -1,44 +1,23 @@
 import Link from "next/link";
 
-export function ForumHeader({
-  actor,
-  nodeName,
-  mode,
-  previewIdentityEnabled,
-}: {
-  actor?: { displayName: string; username: string };
-  nodeName: string;
-  mode: "local" | "connected";
-  previewIdentityEnabled: boolean;
-}) {
+export function ForumHeader() {
   return (
     <header className="forum-header">
       <div className="forum-identity">
         <Link className="forum-mark" href="/">
           FORUM
         </Link>
-        <span className="node-context">{nodeName}</span>
+        <span className="node-context">Forum Plett</span>
       </div>
-      <form className="header-search" action="/search" role="search">
-        <label className="sr-only" htmlFor="forum-search">
-          Search Forum
-        </label>
-        <input id="forum-search" name="q" placeholder="Search" type="search" />
-      </form>
+      <div className="header-search" aria-hidden="true" />
       <nav aria-label="Primary navigation">
-        {actor ? <Link href="/workspace">Workspace</Link> : null}
+        <Link href="/workspace">Workspace</Link>
         <Link href="/">Network</Link>
         <Link href="/library">Library</Link>
-        {actor ? <Link href={`/person/${actor.username}`}>{actor.displayName}</Link> : null}
+        <Link href="/search">Search</Link>
       </nav>
-      <div className="connection-state" title={mode === "local" ? "No external services enabled" : "Forum Network enabled"}>
-        {previewIdentityEnabled ? (
-          <Link href="/session">{actor ? `Preview · ${actor.displayName}` : "Choose preview"}</Link>
-        ) : mode === "local" ? (
-          "Local node"
-        ) : (
-          "Connected"
-        )}
+      <div className="connection-state" title="Private workspace data stays in this browser">
+        Device-local
       </div>
     </header>
   );

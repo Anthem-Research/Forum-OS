@@ -11,8 +11,7 @@ a protected doorway into selected tools; it is not the Engine itself.
 ## Present milestone
 
 - strict TypeScript and Next.js App Router application;
-- a request-scoped session boundary with an explicit local-development identity
-  picker that fails closed in production and connected mode;
+- a static institutional shell that publishes only explicitly public records;
 - the typed `Block / Build / Collection / Connection` object grammar;
 - realistic Thetis, Deep Sea and Garden Rover seed data;
 - reusable Blocks that can appear in multiple contexts;
@@ -21,7 +20,7 @@ a protected doorway into selected tools; it is not the Engine itself.
 - PostgreSQL foundation migration with row-level security;
 - sparse Network, Build, Block, Collection, Person, Node, Library and Search
   surfaces;
-- a browser-local private workspace where an identity can create spaces and
+- a browser-local private workspace where a device can create spaces and
   mixed working objects, reuse one object across spaces, save and restore
   versions, and export or restore a validated backup;
 - domain, graph, privacy and repository tests;
@@ -42,11 +41,16 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. Copy `.env.example` to `.env.local`, then open
-`http://localhost:3000/session` to choose a development identity for that browser.
-There is no implicit actor fallback: without a preview or production session,
-Forum shows only explicitly public work. The preview picker is unavailable in
-production and connected mode.
+Open `http://localhost:3000/workspace`. The workspace is device-local: each
+browser profile keeps its own copy, and a JSON backup is the current transfer
+mechanism between devices. The public Network and Library expose only records
+whose visibility is explicitly public.
+
+## GitHub Pages
+
+The production build is a static export. GitHub Actions verifies the Engine,
+checks the exported artifact for private seed markers, and publishes `engine/out`
+to GitHub Pages after the Engine CI workflow succeeds on `main`.
 
 ## Verify
 

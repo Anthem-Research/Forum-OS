@@ -227,6 +227,18 @@ main {
   line-height: 1.55;
 }
 
+.opening-action {
+  align-self: end;
+  width: fit-content;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--orange);
+  font-size: 0.72rem;
+  font-weight: 600;
+  grid-column: 1 / 5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .content-section,
 .object-page {
   padding: clamp(3.25rem, 7vw, 7rem) var(--page-pad);
@@ -1245,6 +1257,11 @@ a:hover .object-tile {
 
   .opening-note {
     grid-column: 1 / 12;
+  }
+
+  .opening-action {
+    grid-column: 1 / 12;
+    margin-top: 1.75rem;
   }
 
   .object-grid {
