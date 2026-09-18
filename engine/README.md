@@ -21,12 +21,17 @@ a protected doorway into selected tools; it is not the Engine itself.
 - PostgreSQL foundation migration with row-level security;
 - sparse Network, Build, Block, Collection, Person, Node, Library and Search
   surfaces;
+- a browser-local private workspace where an identity can create spaces and
+  mixed working objects, reuse one object across spaces, save and restore
+  versions, and export or restore a validated backup;
 - domain, graph, privacy and repository tests;
 - local/air-gapped and connected deployment profiles documented before cloud
   services are added.
 
-Creation, production authentication, database persistence, file upload, publication,
-forking and contextual AI are not represented as working controls yet. They are
+Server-backed creation, production authentication, database persistence, file
+upload, publication, forking and contextual AI are not represented as working
+controls yet. The private workspace is deliberately stored in the current browser
+and is neither encrypted nor a strict air gap. Those capabilities are
 the next implementation phases; the interface omits them instead of pretending
 they work.
 

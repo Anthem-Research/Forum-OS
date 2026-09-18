@@ -26,6 +26,7 @@ export function ForumHeader({
         <input id="forum-search" name="q" placeholder="Search" type="search" />
       </form>
       <nav aria-label="Primary navigation">
+        {actor ? <Link href="/workspace">Workspace</Link> : null}
         <Link href="/">Network</Link>
         <Link href="/library">Library</Link>
         {actor ? <Link href={`/person/${actor.username}`}>{actor.displayName}</Link> : null}
