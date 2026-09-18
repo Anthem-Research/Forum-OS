@@ -134,7 +134,11 @@
           title: version.title, question: version.question, notes: version.notes,
           drawing: version.drawing, referenceIds: [...version.referenceIds],
         });
-        await saveNow();
+        current.updatedAt = Date.now();
+        await write(current);
+        builds = await getAll();
+        current = builds.find((build) => build.id === current.id);
+        status("Version restored locally");
         render();
       }));
       item.append(name, restore);

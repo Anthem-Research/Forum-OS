@@ -1,4 +1,4 @@
-const CACHE = "forum-workbench-shell-v1";
+const CACHE = "forum-workbench-shell-v2";
 const ASSETS = ["./", "./index.html", "./styles.css", "./app.js"];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
