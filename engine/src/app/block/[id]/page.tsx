@@ -1,21 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { currentActorId } from "@/auth/session";
 import { BlockRenderer } from "@/components/BlockRenderer";
 import { ObjectIndex } from "@/components/ObjectIndex";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
 type BlockPageProps = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: BlockPageProps): Promise<Metadata> {
   const { id } = await params;
+  const actorId = await currentActorId();
   const object = forumRepository.object({ type: "block", id });
-  return { title: object?.kind === "block" ? object.title ?? "Block" : "Block" };
+  return {
+    title:
+      object?.kind === "block" && forumRepository.canActorView(object, actorId)
+        ? object.title ?? "Block"
+        : "Block",
+  };
 }
 
 export default async function BlockPage({ params }: BlockPageProps) {
   const { id } = await params;
-  const actorId = currentActorId();
+  const actorId = await currentActorId();
   const object = forumRepository.object({ type: "block", id });
   if (!object || object.kind !== "block" || !forumRepository.canActorView(object, actorId)) notFound();
   const creator = forumRepository.userById(object.creatorId);

@@ -89,6 +89,8 @@ than introducing an invisible background sync engine prematurely.
 - `src/core/permissions.ts` — central visibility and edit decisions.
 - `src/core/graph.ts` — connection validation and composition.
 - `src/core/repository.ts` — read boundary used by Server Components.
+- `src/auth` — request-scoped identity boundary. The current development preview
+  provider is explicit and unavailable in production or connected mode.
 - `src/components` — Forum presentation grammar.
 - `src/app` — App Router pages and metadata.
 - `migrations` — PostgreSQL schema and row-level security.
@@ -99,8 +101,9 @@ bundles, repository webhooks and other explicit integration boundaries.
 
 ## Next implementation sequence
 
-1. Replace development identities with local household auth and connected adult
-   magic-link auth behind one session interface.
+1. Complete local household auth and connected adult magic-link auth behind the
+   request-scoped session interface. Production currently fails closed rather
+   than trusting a development identity.
 2. Implement the PostgreSQL repository and transaction-scoped actor identity.
 3. Add real creation for text, URL and upload Blocks.
 4. Add reuse, ordering and connection mutations.

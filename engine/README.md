@@ -11,6 +11,8 @@ a protected doorway into selected tools; it is not the Engine itself.
 ## Present milestone
 
 - strict TypeScript and Next.js App Router application;
+- a request-scoped session boundary with an explicit local-development identity
+  picker that fails closed in production and connected mode;
 - the typed `Block / Build / Collection / Connection` object grammar;
 - realistic Thetis, Deep Sea and Garden Rover seed data;
 - reusable Blocks that can appear in multiple contexts;
@@ -23,7 +25,7 @@ a protected doorway into selected tools; it is not the Engine itself.
 - local/air-gapped and connected deployment profiles documented before cloud
   services are added.
 
-Creation, authentication, database persistence, file upload, publication,
+Creation, production authentication, database persistence, file upload, publication,
 forking and contextual AI are not represented as working controls yet. They are
 the next implementation phases; the interface omits them instead of pretending
 they work.
@@ -35,9 +37,11 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. The default development actor is Atlas and the
-default deployment mode is local. Copy `.env.example` to `.env.local` to change
-those settings.
+Open `http://localhost:3000`. Copy `.env.example` to `.env.local`, then open
+`http://localhost:3000/session` to choose a development identity for that browser.
+There is no implicit actor fallback: without a preview or production session,
+Forum shows only explicitly public work. The preview picker is unavailable in
+production and connected mode.
 
 ## Verify
 

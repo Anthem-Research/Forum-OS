@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { currentActorId } from "@/auth/session";
 import { ObjectGrid } from "@/components/ObjectGrid";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
 type NodePageProps = { params: Promise<{ slug: string }> };
 
@@ -15,7 +16,7 @@ export default async function NodePage({ params }: NodePageProps) {
   const { slug } = await params;
   const node = forumRepository.nodeBySlug(slug);
   if (!node) notFound();
-  const work = forumRepository.byNode(node.id, currentActorId());
+  const work = forumRepository.byNode(node.id, await currentActorId());
 
   return (
     <main className="object-page node-page">

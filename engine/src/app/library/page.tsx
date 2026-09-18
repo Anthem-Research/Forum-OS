@@ -1,10 +1,11 @@
+import { currentActorId } from "@/auth/session";
 import { ObjectGrid } from "@/components/ObjectGrid";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
 export const metadata = { title: "Library" };
 
-export default function LibraryPage() {
-  const selected = forumRepository.selected(currentActorId());
+export default async function LibraryPage() {
+  const selected = forumRepository.selected(await currentActorId());
   return (
     <main className="object-page">
       <header className="library-header">

@@ -1,11 +1,15 @@
 import Link from "next/link";
 
 export function ForumHeader({
+  actor,
   nodeName,
   mode,
+  previewIdentityEnabled,
 }: {
+  actor?: { displayName: string; username: string };
   nodeName: string;
   mode: "local" | "connected";
+  previewIdentityEnabled: boolean;
 }) {
   return (
     <header className="forum-header">
@@ -24,11 +28,17 @@ export function ForumHeader({
       <nav aria-label="Primary navigation">
         <Link href="/">Network</Link>
         <Link href="/library">Library</Link>
-        <Link href="/person/atlas">Atlas</Link>
+        {actor ? <Link href={`/person/${actor.username}`}>{actor.displayName}</Link> : null}
       </nav>
-      <p className="connection-state" title={mode === "local" ? "No external services enabled" : "Forum Network enabled"}>
-        {mode === "local" ? "Local node" : "Connected"}
-      </p>
+      <div className="connection-state" title={mode === "local" ? "No external services enabled" : "Forum Network enabled"}>
+        {previewIdentityEnabled ? (
+          <Link href="/session">{actor ? `Preview · ${actor.displayName}` : "Choose preview"}</Link>
+        ) : mode === "local" ? (
+          "Local node"
+        ) : (
+          "Connected"
+        )}
+      </div>
     </header>
   );
 }

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { currentActorId } from "@/auth/session";
 import { ObjectGrid } from "@/components/ObjectGrid";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
 type PersonPageProps = { params: Promise<{ username: string }> };
 
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: PersonPageProps): Promise<Met
 
 export default async function PersonPage({ params }: PersonPageProps) {
   const { username } = await params;
-  const actorId = currentActorId();
+  const actorId = await currentActorId();
   const person = forumRepository.userByUsername(username);
   if (!person) notFound();
   const work = forumRepository.byCreator(person.id, actorId);

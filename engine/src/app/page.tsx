@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { currentActorId, previewIdentityEnabled } from "@/auth/session";
 import { ObjectGrid } from "@/components/ObjectGrid";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
-export default function HomePage() {
-  const actorId = currentActorId();
-  const actor = forumRepository.userById(actorId);
+export default async function HomePage() {
+  const actorId = await currentActorId();
+  const actor = actorId ? forumRepository.userById(actorId) : undefined;
   const ownWork = forumRepository
     .accessibleObjects(actorId)
     .filter((object) => object.creatorId === actorId)
@@ -24,14 +25,20 @@ export default function HomePage() {
           <br /> tested and changed.
         </h1>
         <p className="opening-note">
-          {actor?.displayName}&apos;s private work and the parts of Forum Plett currently visible to this household.
+          {actor
+            ? `${actor.displayName}’s private work and the parts of Forum Plett currently visible to this household.`
+            : "Only explicitly public work is visible without a household or Network session."}
         </p>
       </section>
 
       <section className="content-section" aria-labelledby="your-work-title">
         <header className="section-header">
-          <h2 id="your-work-title">Recent from your work</h2>
-          <Link href="/person/atlas">Open body of work</Link>
+          <h2 id="your-work-title">{actor ? "Recent from your work" : "Public work"}</h2>
+          {actor ? (
+            <Link href={`/person/${actor.username}`}>Open body of work</Link>
+          ) : previewIdentityEnabled() ? (
+            <Link href="/session">Choose preview identity</Link>
+          ) : null}
         </header>
         <ObjectGrid objects={ownWork} />
       </section>

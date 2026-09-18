@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { currentActorId } from "@/auth/session";
 import { ObjectGrid } from "@/components/ObjectGrid";
-import { currentActorId, forumRepository } from "@/core/repository";
+import { forumRepository } from "@/core/repository";
 
 type BuildPageProps = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: BuildPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const build = forumRepository.buildBySlug(slug, currentActorId());
+  const build = forumRepository.buildBySlug(slug, await currentActorId());
   return { title: build?.title ?? "Build" };
 }
 
 export default async function BuildPage({ params }: BuildPageProps) {
   const { slug } = await params;
-  const actorId = currentActorId();
+  const actorId = await currentActorId();
   const build = forumRepository.buildBySlug(slug, actorId);
   if (!build) notFound();
 
