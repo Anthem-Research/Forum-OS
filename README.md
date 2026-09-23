@@ -1,14 +1,19 @@
 # Forum OS
 
-Forum OS now contains two deliberately separate parts:
+Forum OS now contains three deliberately separate parts:
 
 - [`app/`](app/) — the quiet native Android launcher and containment client for
   Atlas's Galaxy Tab;
+- [`workbench/`](workbench/) — an offline-capable, browser-local place for
+  questions, notes, drawings, connections, versions and branches;
 - [`engine/`](engine/) — Forum Engine, the networked and locally self-hostable
   application built around Blocks, Builds, Collections and Connections.
 
-The launcher is a protected doorway. Forum Engine is the persistent environment
-for real work, Nodes, the Network and the curated Library.
+The launcher is a protected doorway. The Workbench keeps early work in one
+browser profile with no background sync. Forum Engine is the persistent
+environment for Nodes, the Network and the curated Library. Local browser
+storage is not account isolation or encryption; see the
+[Workbench README](workbench/README.md) before using it with private material.
 
 ## Forum Engine
 
