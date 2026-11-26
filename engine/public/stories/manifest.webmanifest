@@ -1,1 +1,26 @@
-{"id":"./","name":"Stories","short_name":"Stories","description":"PARC audio library","start_url":"./index.html","scope":"./","display":"standalone","theme_color":"#f6f4ed","background_color":"#f6f4ed","icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"},{"src":"./icon-192.png","sizes":"192x192","type":"image/png"},{"src":"./icon-512.png","sizes":"512x512","type":"image/png"}]}
+{
+  "id": "/Forum-OS/stories/",
+  "name": "Stories",
+  "short_name": "Stories",
+  "description": "PARC audio library",
+  "start_url": "/Forum-OS/stories/index.html",
+  "scope": "/Forum-OS/stories/",
+  "display": "standalone",
+  "theme_color": "#f6f4ed",
+  "background_color": "#f6f4ed",
+  "icons": [
+    {
+      "src": "/Forum-OS/stories/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/Forum-OS/stories/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "prefer_related_applications": false
+}
