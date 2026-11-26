@@ -19,4 +19,4 @@ jobs:
         with:
           node-version: 24
       - name: Check the deployed PWA in Chromium
-        run: node engine/scripts/check-projects-install.mjs
+        run: xvfb-run -a node engine/scripts/check-projects-install.mjs
