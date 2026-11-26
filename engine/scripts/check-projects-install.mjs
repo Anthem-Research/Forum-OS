@@ -4,7 +4,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 const target='https://anthem-research.github.io/Forum-OS/projects/index.html?verify='+Date.now();
 const profile=await mkdtemp(join(tmpdir(),'pwa-'));
-const chrome=spawn('google-chrome',['--no-sandbox','--disable-dev-shm-usage','--remote-debugging-port=9227','--user-data-dir='+profile,'about:blank'],{stdio:'ignore'});
+const chrome=spawn('google-chrome',['--headless=new','--no-sandbox','--disable-dev-shm-usage','--remote-debugging-port=9227','--user-data-dir='+profile,'about:blank'],{stdio:'ignore'});
 const pause=ms=>new Promise(r=>setTimeout(r,ms));let ws,browser;
 try{
 let tabs;for(let i=0;i<40;i++){try{tabs=await fetch('http://127.0.0.1:9227/json/list').then(r=>r.json());break}catch{await pause(300)}}if(!tabs)throw Error('Chrome did not start');
