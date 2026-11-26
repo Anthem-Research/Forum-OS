@@ -1,0 +1,26 @@
+{
+  "id": "/Forum-OS/workshop/",
+  "name": "Workshop",
+  "short_name": "Workshop",
+  "description": "PARC practical projects",
+  "start_url": "/Forum-OS/workshop/index.html",
+  "scope": "/Forum-OS/workshop/",
+  "display": "standalone",
+  "theme_color": "#f6f4ed",
+  "background_color": "#f6f4ed",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/Forum-OS/workshop/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/Forum-OS/workshop/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

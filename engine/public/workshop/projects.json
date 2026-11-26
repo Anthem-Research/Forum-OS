@@ -1,0 +1,172 @@
+[
+  {
+    "id": "boat",
+    "title": "Build a boat",
+    "category": "Engineering",
+    "duration": "30–45 min",
+    "intro": "Design a small floating boat that can carry a cargo of coins.",
+    "materials": [
+      "Aluminium foil",
+      "A basin of water",
+      "10 coins",
+      "A towel"
+    ],
+    "steps": [
+      {
+        "title": "Shape a hull",
+        "text": "Fold a sheet of foil into a shallow boat with a flat bottom and raised sides."
+      },
+      {
+        "title": "Test it",
+        "text": "Place the boat on the water. Does it float without leaking?"
+      },
+      {
+        "title": "Load the cargo",
+        "text": "Add coins one at a time, spreading them evenly. Count how many the boat carries before sinking."
+      },
+      {
+        "title": "Improve the design",
+        "text": "Build a wider or longer boat. Test it again with the same coins."
+      }
+    ],
+    "challenge": "Which shape carries the most cargo? Why do you think that is?",
+    "safety": "Use a shallow basin with an adult nearby. Dry any spilled water.",
+    "diagram": "boat"
+  },
+  {
+    "id": "bridge",
+    "title": "Build a bridge",
+    "category": "Structures",
+    "duration": "25–40 min",
+    "intro": "Discover how the shape of paper changes its strength.",
+    "materials": [
+      "Two books of similar height",
+      "Three sheets of paper",
+      "Coins"
+    ],
+    "steps": [
+      {
+        "title": "Make a gap",
+        "text": "Place the books about 15 cm apart."
+      },
+      {
+        "title": "Test a flat sheet",
+        "text": "Lay one sheet across the gap. Add coins in the centre until the bridge bends."
+      },
+      {
+        "title": "Change its shape",
+        "text": "Fold a new sheet into an accordion shape and place it across the same gap."
+      },
+      {
+        "title": "Compare",
+        "text": "Count how many coins each bridge can carry. Try another fold."
+      }
+    ],
+    "challenge": "Can you make a stronger bridge using only one sheet of paper?",
+    "safety": "Keep the bridge low and use only small loads.",
+    "diagram": "bridge"
+  },
+  {
+    "id": "garden",
+    "title": "Grow a bean",
+    "category": "Biology",
+    "duration": "15 min + daily observations",
+    "intro": "Watch a seed develop roots, a stem and leaves.",
+    "materials": [
+      "A bean seed for planting",
+      "A clear cup",
+      "Paper towel",
+      "Water",
+      "A small pot and soil"
+    ],
+    "steps": [
+      {
+        "title": "Prepare the seed",
+        "text": "Put damp paper towel inside the cup and place the bean where you can see it."
+      },
+      {
+        "title": "Choose a place",
+        "text": "Put the cup in a warm spot with indirect light. Keep the towel damp, not flooded."
+      },
+      {
+        "title": "Observe",
+        "text": "Check the seed each day. Draw or describe the first root and the emerging shoot."
+      },
+      {
+        "title": "Plant it",
+        "text": "When roots and a shoot have developed, ask an adult to help move it into soil."
+      }
+    ],
+    "challenge": "Which appeared first, the root or the shoot? How does the plant change over a week?",
+    "safety": "Do not eat the seed or sprouts. Wash your hands after handling soil.",
+    "diagram": "garden"
+  },
+  {
+    "id": "sundial",
+    "title": "Make a sundial",
+    "category": "Astronomy",
+    "duration": "20 min + observations",
+    "intro": "Use the changing position of a shadow to investigate time.",
+    "materials": [
+      "A sheet of cardboard",
+      "A pencil",
+      "Modelling clay",
+      "A watch or clock"
+    ],
+    "steps": [
+      {
+        "title": "Set up the dial",
+        "text": "Stand the pencil upright in clay on the cardboard. Put it on a flat sunny surface."
+      },
+      {
+        "title": "Mark the shadow",
+        "text": "Trace the shadow and write the current time beside the line."
+      },
+      {
+        "title": "Return later",
+        "text": "Repeat every hour while the sun is shining. Do not move the cardboard."
+      },
+      {
+        "title": "Compare",
+        "text": "Look at how the shadow's direction and length changed."
+      }
+    ],
+    "challenge": "When was the shadow shortest? What might happen tomorrow?",
+    "safety": "Never look directly at the sun. Use sun protection outside.",
+    "diagram": "sundial"
+  },
+  {
+    "id": "wind",
+    "title": "Make a wind indicator",
+    "category": "Weather",
+    "duration": "20–30 min",
+    "intro": "Build a simple instrument to observe wind direction.",
+    "materials": [
+      "A paper strip or ribbon",
+      "String",
+      "A stick",
+      "A notebook"
+    ],
+    "steps": [
+      {
+        "title": "Attach the ribbon",
+        "text": "Tie the ribbon to one end of the stick with string."
+      },
+      {
+        "title": "Find a clear space",
+        "text": "Hold the stick upright outdoors, away from buildings and trees."
+      },
+      {
+        "title": "Observe the wind",
+        "text": "Watch which direction the ribbon points. It points downwind."
+      },
+      {
+        "title": "Record changes",
+        "text": "Repeat in the morning and afternoon. Draw the ribbon's direction and compare."
+      }
+    ],
+    "challenge": "Does the wind always come from the same direction?",
+    "safety": "Stay away from roads and power lines. Do not use it in a storm.",
+    "diagram": "wind"
+  }
+]
