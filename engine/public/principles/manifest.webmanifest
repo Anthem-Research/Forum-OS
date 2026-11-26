@@ -1,0 +1,26 @@
+{
+  "id": "/Forum-OS/principles/",
+  "name": "Principles",
+  "short_name": "Principles",
+  "description": "PARC interactive ideas",
+  "start_url": "/Forum-OS/principles/index.html",
+  "scope": "/Forum-OS/principles/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/Forum-OS/principles/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/Forum-OS/principles/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

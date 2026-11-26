@@ -1,0 +1,306 @@
+[
+  {
+    "id": "first",
+    "domain": "Reasoning",
+    "title": "First principles",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "What makes a boat a boat?",
+        "text": "Boats can look very different. But every boat must float and support its load.",
+        "question": "What does a boat actually need to do?"
+      },
+      {
+        "phase": "Predict",
+        "title": "Start with what matters",
+        "text": "Imagine a boat with no motor, no sail and no paint.",
+        "question": "Could it still float? Which parts are essential?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Design a floating boat",
+        "text": "Change the space inside the hull and the weight of its cargo.",
+        "model": "boat",
+        "question": "Can you make a boat that floats with more cargo?"
+      },
+      {
+        "phase": "Explain",
+        "title": "Build from basic facts",
+        "text": "First principles thinking means identifying the basic facts and constraints of a problem, then reasoning from them instead of copying an existing solution.",
+        "question": "What fact about floating did your design depend on?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Rethink a chair",
+        "text": "A chair does not have to have four legs. It needs to support a person safely.",
+        "question": "Draw three different chairs that solve the same problem."
+      }
+    ]
+  },
+  {
+    "id": "evidence",
+    "domain": "Reasoning",
+    "title": "Test your ideas",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "A guess is not a fact",
+        "text": "Someone says that every heavy object falls faster than a light one.",
+        "question": "How could you find out?"
+      },
+      {
+        "phase": "Predict",
+        "title": "Make a prediction",
+        "text": "Imagine dropping two balls of the same size and shape but different weights. Ignore air resistance.",
+        "question": "Which ball will reach the ground first?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Drop two balls",
+        "text": "Choose their masses and release them together.",
+        "model": "fall",
+        "question": "Does changing their mass change the time to land in this model?"
+      },
+      {
+        "phase": "Explain",
+        "title": "Look for a way to be wrong",
+        "text": "A testable idea makes a prediction that evidence could contradict. In this ideal model, gravity gives both balls the same acceleration.",
+        "question": "What observation would contradict the original claim?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Try it outside",
+        "text": "With an adult, drop two safe, similar-sized balls from the same low height onto a clear surface.",
+        "question": "What would you change to make the comparison fair?"
+      }
+    ]
+  },
+  {
+    "id": "emergence",
+    "domain": "Systems",
+    "title": "Emergence",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "Nobody is in charge",
+        "text": "A flock of birds can turn together even though no single bird controls the whole flock.",
+        "question": "How could thousands of birds coordinate?"
+      },
+      {
+        "phase": "Predict",
+        "title": "A few simple rules",
+        "text": "Imagine each bird avoids collisions, moves toward nearby birds and copies their direction.",
+        "question": "What might happen when every bird follows those rules?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Make a flock",
+        "text": "Switch between independent movement and neighbour rules. Watch the group change.",
+        "model": "flock",
+        "question": "Did you tell each bird where to fly?"
+      },
+      {
+        "phase": "Explain",
+        "title": "A pattern emerges",
+        "text": "Emergence is when interactions between parts create a pattern at the scale of the whole system. No bird needs to know the shape of the flock.",
+        "question": "Can you describe the difference between an individual bird and the group?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Look for patterns",
+        "text": "Observe a group of birds, ants or people. Look for patterns in how they move or respond to each other.",
+        "question": "What simple rules might help explain the pattern?"
+      }
+    ]
+  },
+  {
+    "id": "feedback",
+    "domain": "Systems",
+    "title": "Feedback loops",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "A change causes another change",
+        "text": "When a room becomes cold, a thermostat can switch a heater on. When the room warms up, it switches it off.",
+        "question": "Why does the heater not need to stay on forever?"
+      },
+      {
+        "phase": "Predict",
+        "title": "Keep a room comfortable",
+        "text": "Imagine a heater that never checks the temperature.",
+        "question": "What would happen if it kept heating?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Control the temperature",
+        "text": "Turn feedback on or off, change the target temperature, then advance time.",
+        "model": "heat",
+        "question": "Which rule keeps the room closer to the target?"
+      },
+      {
+        "phase": "Explain",
+        "title": "Feedback changes behaviour",
+        "text": "Negative feedback counteracts a change. Positive feedback amplifies a change. A thermostat uses negative feedback to keep temperature near its target.",
+        "question": "How does the heater respond to its own effect?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Find a feedback loop",
+        "text": "Think about being hungry, eating and becoming full.",
+        "question": "How does feeling full change what you do next?"
+      }
+    ]
+  },
+  {
+    "id": "networks",
+    "domain": "Systems",
+    "title": "Networks",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "Connected things",
+        "text": "Roads connect towns. Messages travel between people. Roots and fungi can form networks in soil.",
+        "question": "What can a connection allow to move?"
+      },
+      {
+        "phase": "Predict",
+        "title": "A broken connection",
+        "text": "Imagine a road between two towns is blocked.",
+        "question": "What happens if there is another road? What if there is not?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Build a route",
+        "text": "Tap connections to open or close roads. Try to keep the start connected to the destination.",
+        "model": "network",
+        "question": "Can you make two independent routes?"
+      },
+      {
+        "phase": "Explain",
+        "title": "Connections matter",
+        "text": "A network consists of nodes and links. Its structure affects how things can move, how easily failures spread and whether alternate paths exist.",
+        "question": "Which connections are most important in your network?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Map your neighbourhood",
+        "text": "Draw your home and three nearby places. Connect them with roads or paths.",
+        "question": "Can you reach the same place in more than one way?"
+      }
+    ]
+  },
+  {
+    "id": "growth",
+    "domain": "Nature",
+    "title": "Exponential growth",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "One becomes two",
+        "text": "Imagine a pond with one lily pad. Every day each lily pad produces one more.",
+        "question": "How many will there be tomorrow?"
+      },
+      {
+        "phase": "Predict",
+        "title": "How fast does it grow?",
+        "text": "The number doubles each day, as long as there is enough space and resources.",
+        "question": "Will the pond fill slowly all the way to the end?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Grow the pond",
+        "text": "Move through the days and watch the number of lily pads double.",
+        "model": "growth",
+        "question": "If the pond is full on day seven, when was it half full?"
+      },
+      {
+        "phase": "Explain",
+        "title": "Growth builds on growth",
+        "text": "Exponential growth happens when a quantity increases by the same proportion over equal intervals. The amount added gets larger as the total grows.",
+        "question": "Why is the last day's increase much larger than the first day's?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Fold and double",
+        "text": "Draw one dot, then two, then four, then eight. Continue on paper.",
+        "question": "How many dots would you need after ten doublings?"
+      }
+    ]
+  },
+  {
+    "id": "scarcity",
+    "domain": "Human action",
+    "title": "Scarcity and choice",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "You cannot do everything",
+        "text": "Imagine you have six wooden blocks. You want to build a house, a bridge and a boat.",
+        "question": "Can you use the same block in two places at once?"
+      },
+      {
+        "phase": "Predict",
+        "title": "Choose what matters",
+        "text": "A house might need three blocks. A bridge might need three, too.",
+        "question": "What happens to the boat if you build both?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Allocate your materials",
+        "text": "Distribute six blocks among three projects. Take blocks back to change your plan.",
+        "model": "resources",
+        "question": "What did you give up by choosing one project?"
+      },
+      {
+        "phase": "Explain",
+        "title": "Every choice has a cost",
+        "text": "Scarcity means resources are limited relative to possible uses. Opportunity cost is the value of the best alternative you give up when you choose.",
+        "question": "What is the next-best use of your blocks?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Plan an afternoon",
+        "text": "You have one hour. You want to read, build something and go outside.",
+        "question": "How would you use your time, and what would you give up?"
+      }
+    ]
+  },
+  {
+    "id": "tradeoffs",
+    "domain": "Reasoning",
+    "title": "Trade-offs",
+    "pages": [
+      {
+        "phase": "Observe",
+        "title": "Better in one way",
+        "text": "A bicycle with a very light frame is easier to carry. A stronger frame might weigh more.",
+        "question": "Can a design be best at everything?"
+      },
+      {
+        "phase": "Predict",
+        "title": "Choose a design goal",
+        "text": "Imagine you need to carry a heavy load, or travel as quickly as possible.",
+        "question": "Would you choose the same design for both jobs?"
+      },
+      {
+        "phase": "Experiment",
+        "title": "Design a vehicle",
+        "text": "Add reinforcement to a simple model. It increases strength but also adds weight.",
+        "model": "trade",
+        "question": "Which design suits a heavy load? Which is easiest to carry?"
+      },
+      {
+        "phase": "Explain",
+        "title": "Trade-offs",
+        "text": "A trade-off occurs when improving one property comes at the cost of another under a constraint. The right design depends on what you value and need.",
+        "question": "Why is there no single best design for every job?"
+      },
+      {
+        "phase": "Apply",
+        "title": "Look at your own boat",
+        "text": "Think of a wide stable hull and a narrow hull that may move through water more easily.",
+        "question": "Which would you choose for cargo, and which for a race?"
+      }
+    ]
+  }
+]
