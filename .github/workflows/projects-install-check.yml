@@ -1,16 +1,14 @@
 name: Verify deployed PARC Projects
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/projects-install-check.yml"
-      - "engine/public/projects/**"
-      - "engine/scripts/check-projects-install.mjs"
+  workflow_run:
+    workflows: [Deploy Forum Engine to GitHub Pages]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
