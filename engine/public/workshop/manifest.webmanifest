@@ -6,8 +6,8 @@
   "start_url": "/Forum-OS/workshop/index.html",
   "scope": "/Forum-OS/workshop/",
   "display": "standalone",
-  "theme_color": "#f6f4ed",
-  "background_color": "#f6f4ed",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "prefer_related_applications": false,
   "icons": [
     {

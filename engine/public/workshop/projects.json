@@ -14,19 +14,23 @@
     "steps": [
       {
         "title": "Shape a hull",
-        "text": "Fold a sheet of foil into a shallow boat with a flat bottom and raised sides."
+        "text": "Fold a sheet of foil into a shallow boat with a flat bottom and raised sides.",
+        "image": "images/boat-1.svg"
       },
       {
         "title": "Test it",
-        "text": "Place the boat on the water. Does it float without leaking?"
+        "text": "Place the boat on the water. Does it float without leaking?",
+        "image": "images/boat-2.svg"
       },
       {
         "title": "Load the cargo",
-        "text": "Add coins one at a time, spreading them evenly. Count how many the boat carries before sinking."
+        "text": "Add coins one at a time, spreading them evenly. Count how many the boat carries before sinking.",
+        "image": "images/boat-3.svg"
       },
       {
         "title": "Improve the design",
-        "text": "Build a wider or longer boat. Test it again with the same coins."
+        "text": "Build a wider or longer boat. Test it again with the same coins.",
+        "image": "images/boat-4.svg"
       }
     ],
     "challenge": "Which shape carries the most cargo? Why do you think that is?",
@@ -47,19 +51,23 @@
     "steps": [
       {
         "title": "Make a gap",
-        "text": "Place the books about 15 cm apart."
+        "text": "Place the books about 15 cm apart.",
+        "image": "images/bridge-1.svg"
       },
       {
         "title": "Test a flat sheet",
-        "text": "Lay one sheet across the gap. Add coins in the centre until the bridge bends."
+        "text": "Lay one sheet across the gap. Add coins in the centre until the bridge bends.",
+        "image": "images/bridge-2.svg"
       },
       {
         "title": "Change its shape",
-        "text": "Fold a new sheet into an accordion shape and place it across the same gap."
+        "text": "Fold a new sheet into an accordion shape and place it across the same gap.",
+        "image": "images/bridge-3.svg"
       },
       {
         "title": "Compare",
-        "text": "Count how many coins each bridge can carry. Try another fold."
+        "text": "Count how many coins each bridge can carry. Try another fold.",
+        "image": "images/bridge-4.svg"
       }
     ],
     "challenge": "Can you make a stronger bridge using only one sheet of paper?",
@@ -82,19 +90,23 @@
     "steps": [
       {
         "title": "Prepare the seed",
-        "text": "Put damp paper towel inside the cup and place the bean where you can see it."
+        "text": "Put damp paper towel inside the cup and place the bean where you can see it.",
+        "image": "images/garden-1.svg"
       },
       {
         "title": "Choose a place",
-        "text": "Put the cup in a warm spot with indirect light. Keep the towel damp, not flooded."
+        "text": "Put the cup in a warm spot with indirect light. Keep the towel damp, not flooded.",
+        "image": "images/garden-2.svg"
       },
       {
         "title": "Observe",
-        "text": "Check the seed each day. Draw or describe the first root and the emerging shoot."
+        "text": "Check the seed each day. Draw or describe the first root and the emerging shoot.",
+        "image": "images/garden-3.svg"
       },
       {
         "title": "Plant it",
-        "text": "When roots and a shoot have developed, ask an adult to help move it into soil."
+        "text": "When roots and a shoot have developed, ask an adult to help move it into soil.",
+        "image": "images/garden-4.svg"
       }
     ],
     "challenge": "Which appeared first, the root or the shoot? How does the plant change over a week?",
@@ -116,19 +128,23 @@
     "steps": [
       {
         "title": "Set up the dial",
-        "text": "Stand the pencil upright in clay on the cardboard. Put it on a flat sunny surface."
+        "text": "Stand the pencil upright in clay on the cardboard. Put it on a flat sunny surface.",
+        "image": "images/sundial-1.svg"
       },
       {
         "title": "Mark the shadow",
-        "text": "Trace the shadow and write the current time beside the line."
+        "text": "Trace the shadow and write the current time beside the line.",
+        "image": "images/sundial-2.svg"
       },
       {
         "title": "Return later",
-        "text": "Repeat every hour while the sun is shining. Do not move the cardboard."
+        "text": "Repeat every hour while the sun is shining. Do not move the cardboard.",
+        "image": "images/sundial-3.svg"
       },
       {
         "title": "Compare",
-        "text": "Look at how the shadow's direction and length changed."
+        "text": "Look at how the shadow's direction and length changed.",
+        "image": "images/sundial-4.svg"
       }
     ],
     "challenge": "When was the shadow shortest? What might happen tomorrow?",
@@ -150,19 +166,23 @@
     "steps": [
       {
         "title": "Attach the ribbon",
-        "text": "Tie the ribbon to one end of the stick with string."
+        "text": "Tie the ribbon to one end of the stick with string.",
+        "image": "images/wind-1.svg"
       },
       {
         "title": "Find a clear space",
-        "text": "Hold the stick upright outdoors, away from buildings and trees."
+        "text": "Hold the stick upright outdoors, away from buildings and trees.",
+        "image": "images/wind-2.svg"
       },
       {
         "title": "Observe the wind",
-        "text": "Watch which direction the ribbon points. It points downwind."
+        "text": "Watch which direction the ribbon points. It points downwind.",
+        "image": "images/wind-3.svg"
       },
       {
         "title": "Record changes",
-        "text": "Repeat in the morning and afternoon. Draw the ribbon's direction and compare."
+        "text": "Repeat in the morning and afternoon. Draw the ribbon's direction and compare.",
+        "image": "images/wind-4.svg"
       }
     ],
     "challenge": "Does the wind always come from the same direction?",
