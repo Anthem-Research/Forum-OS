@@ -1,162 +1,72 @@
 [
   {
-    "id": "first",
-    "domain": "Reasoning",
-    "title": "First principles",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "First principles",
-        "text": "Make a boat that floats.",
-        "model": "boat",
-        "question": "Can it carry more?"
-      },
-      {
-        "phase": "The idea",
-        "title": "First principles",
-        "text": "Start with what you know is true. A boat must float and carry its load. It does not need to look like other boats.",
-        "question": "Could you invent a new kind of chair?"
-      }
-    ]
-  },
-  {
-    "id": "evidence",
-    "domain": "Reasoning",
-    "title": "Test your ideas",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "Test your ideas",
-        "text": "Drop two balls of different weights.",
-        "model": "fall",
-        "question": "Which lands first?"
-      },
-      {
-        "phase": "The idea",
-        "title": "Evidence",
-        "text": "A good test helps us find out if an idea is true. Without air resistance, both balls fall at the same rate.",
-        "question": "What else could you test?"
-      }
-    ]
-  },
-  {
     "id": "emergence",
-    "domain": "Systems",
     "title": "Emergence",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "Emergence",
-        "text": "Watch the birds. Change their rules.",
-        "model": "flock",
-        "question": "Do they need a leader?"
-      },
-      {
-        "phase": "The idea",
-        "title": "Emergence",
-        "text": "Each bird follows a few simple rules. Together, they can form a flock. A big pattern can emerge from small actions.",
-        "question": "Where else do you see groups forming patterns?"
-      }
-    ]
-  },
-  {
-    "id": "feedback",
-    "domain": "Systems",
-    "title": "Feedback loops",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "Feedback loops",
-        "text": "Try to keep the room warm, but not too hot.",
-        "model": "heat",
-        "question": "Which setting works better?"
-      },
-      {
-        "phase": "The idea",
-        "title": "Feedback",
-        "text": "A heater warms the room. When the room gets warm enough, the thermostat turns the heater off. The result changes what happens next.",
-        "question": "What makes you stop eating when you are full?"
-      }
-    ]
-  },
-  {
-    "id": "networks",
-    "domain": "Systems",
-    "title": "Networks",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "Networks",
-        "text": "Open and close roads.",
-        "model": "network",
-        "question": "Can you still get to the other side?"
-      },
-      {
-        "phase": "The idea",
-        "title": "Networks",
-        "text": "A network is a group of things joined by links. Extra links can give us other ways to get somewhere.",
-        "question": "Can you take two different routes home?"
-      }
-    ]
+    "model": "flock",
+    "hint": "Let the birds follow each other.",
+    "idea": "Each bird follows a few simple rules. Together they form a flock, without a leader."
   },
   {
     "id": "growth",
-    "domain": "Nature",
-    "title": "Exponential growth",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "Exponential growth",
-        "text": "Grow a pond full of lily pads.",
-        "model": "growth",
-        "question": "When is it half full?"
-      },
-      {
-        "phase": "The idea",
-        "title": "Exponential growth",
-        "text": "Each lily pad makes another. The more pads there are, the more new pads grow each day.",
-        "question": "What happens if you double four, then double again?"
-      }
-    ]
+    "title": "Growth",
+    "model": "growth",
+    "hint": "Make each lily pad grow another.",
+    "idea": "When the number doubles again and again, it grows faster and faster. This is exponential growth."
+  },
+  {
+    "id": "first",
+    "title": "First principles",
+    "model": "boat",
+    "hint": "Make the boat big enough to float.",
+    "idea": "A boat must push aside enough water to support its weight. Start with that fact, rather than copying another boat."
+  },
+  {
+    "id": "evidence",
+    "title": "Evidence",
+    "model": "fall",
+    "hint": "Which ball will land first?",
+    "idea": "A test lets us check an idea. Without air resistance, heavy and light balls fall at the same rate."
+  },
+  {
+    "id": "feedback",
+    "title": "Feedback",
+    "model": "heat",
+    "hint": "Keep the room warm.",
+    "idea": "A thermostat turns the heater on when the room is cold and off when it is warm. This is feedback."
+  },
+  {
+    "id": "networks",
+    "title": "Networks",
+    "model": "network",
+    "hint": "Tap a road to close or open it.",
+    "idea": "A network is made of things and their connections. Extra roads give us other ways to get there."
   },
   {
     "id": "scarcity",
-    "domain": "Human action",
-    "title": "Scarcity and choice",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "Scarcity and choice",
-        "text": "You have six blocks. Choose what to build.",
-        "model": "resources",
-        "question": "What will you have to leave out?"
-      },
-      {
-        "phase": "The idea",
-        "title": "Scarcity",
-        "text": "We have only so much time, money and material. Choosing one thing can mean giving up another.",
-        "question": "What would you do with one free hour?"
-      }
-    ]
+    "title": "Scarcity",
+    "model": "resources",
+    "hint": "Share six blocks between the three projects.",
+    "idea": "There are only six blocks. Using one here means you cannot use it somewhere else."
   },
   {
     "id": "tradeoffs",
-    "domain": "Reasoning",
     "title": "Trade-offs",
-    "pages": [
-      {
-        "phase": "Try it",
-        "title": "Trade-offs",
-        "text": "Make the vehicle stronger.",
-        "model": "trade",
-        "question": "What else changes?"
-      },
-      {
-        "phase": "The idea",
-        "title": "Trade-offs",
-        "text": "Adding bars makes this frame stronger, but also heavier. A trade-off is when getting more of one thing costs you something else.",
-        "question": "Would you rather have a light bike or a strong one?"
-      }
-    ]
+    "model": "trade",
+    "hint": "Make the frame stronger.",
+    "idea": "More bars make this model stronger, but also heavier. Getting more of one thing can cost us another."
+  },
+  {
+    "id": "spread",
+    "title": "Spread",
+    "model": "spread",
+    "hint": "Touch a dot. Watch the change spread.",
+    "idea": "A small change can spread through a connected group, one neighbour at a time."
+  },
+  {
+    "id": "patterns",
+    "title": "Patterns",
+    "model": "life",
+    "hint": "Watch what happens to the little squares.",
+    "idea": "Simple rules can create surprising patterns. In this model, each square changes according to its neighbours."
   }
 ]
