@@ -3,21 +3,79 @@
     "id": "rabbit",
     "title": "The Tale of Peter Rabbit and Others",
     "author": "Beatrix Potter",
-    "archive": "thetaleofpeterrabbitandothers_2008_librivox",
-    "source": "https://librivox.org/the-tale-of-peter-rabbit-and-others-by-beatrix-potter/"
+    "source": "https://librivox.org/the-tale-of-peter-rabbit-and-others-by-beatrix-potter/",
+    "tracks": [
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_01_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_02_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_03_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_04_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_05_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_06_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_07_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_08_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_09_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_10_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_11_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_12_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_13_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_14_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_15_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_16_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_17_potter_128kb.mp3",
+      "https://archive.org/download/thetaleofpeterrabbitandothers_2008_librivox/peterrabbitandothertales_18_potter_128kb.mp3"
+    ]
   },
   {
     "id": "willows",
     "title": "The Wind in the Willows",
     "author": "Kenneth Grahame",
-    "archive": "wind_willows_ap_librivox",
-    "source": "https://librivox.org/the-wind-in-the-willows-by-kenneth-grahame-solo/"
+    "source": "https://librivox.org/the-wind-in-the-willows-by-kenneth-grahame-solo/",
+    "tracks": [
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_01_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_02_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_03_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_04_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_05_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_06_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_07_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_08_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_09_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_10_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_11_grahame_ap.mp3",
+      "https://archive.org/download/wind_willows_ap_librivox/wind_willows_12_grahame_ap.mp3"
+    ]
   },
   {
     "id": "fables",
     "title": "Aesop’s Fables",
     "author": "Aesop",
-    "archive": "aesop_fables_volume_one_librivox",
-    "source": "https://librivox.org/aesops-fables-volume-1-fables-1-25/"
+    "source": "https://librivox.org/aesops-fables-volume-1-fables-1-25/",
+    "tracks": [
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_01_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_02_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_03_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_04_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_05_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_06_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_07_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_08_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_09_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_10_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_11_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_12_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_13_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_14_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_15_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_16_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_17_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_18_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_19_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_20_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_21_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_22_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_23_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_24_aesop.mp3",
+      "https://archive.org/download/aesop_fables_volume_one_librivox/fables_01_25_aesop.mp3"
+    ]
   }
 ]
