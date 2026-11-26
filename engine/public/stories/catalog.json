@@ -1,0 +1,23 @@
+[
+  {
+    "id": "rabbit",
+    "title": "The Tale of Peter Rabbit and Others",
+    "author": "Beatrix Potter",
+    "archive": "thetaleofpeterrabbitandothers_2008_librivox",
+    "source": "https://librivox.org/the-tale-of-peter-rabbit-and-others-by-beatrix-potter/"
+  },
+  {
+    "id": "willows",
+    "title": "The Wind in the Willows",
+    "author": "Kenneth Grahame",
+    "archive": "wind_willows_ap_librivox",
+    "source": "https://librivox.org/the-wind-in-the-willows-by-kenneth-grahame-solo/"
+  },
+  {
+    "id": "fables",
+    "title": "Aesop’s Fables",
+    "author": "Aesop",
+    "archive": "aesop_fables_volume_one_librivox",
+    "source": "https://librivox.org/aesops-fables-volume-1-fables-1-25/"
+  }
+]
