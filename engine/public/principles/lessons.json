@@ -3,15 +3,50 @@
     "id": "emergence",
     "title": "Emergence",
     "model": "flock",
-    "hint": "Let the birds follow each other.",
+    "hint": "Change how the birds fly.",
     "idea": "Each bird follows a few simple rules. Together they form a flock, without a leader."
   },
   {
     "id": "growth",
     "title": "Growth",
     "model": "growth",
-    "hint": "Make each lily pad grow another.",
+    "hint": "Watch the pond fill.",
     "idea": "When the number doubles again and again, it grows faster and faster. This is exponential growth."
+  },
+  {
+    "id": "trails",
+    "title": "Trails",
+    "model": "trails",
+    "hint": "Change the rules. Watch paths form.",
+    "idea": "Agents follow and leave trails. When a trail attracts more agents, it grows stronger. This is positive feedback."
+  },
+  {
+    "id": "fire",
+    "title": "Forest",
+    "model": "fire",
+    "hint": "Touch the forest to start a fire.",
+    "idea": "Fire spreads between nearby trees. A gap can stop a chain reaction. Wind changes the direction of spread."
+  },
+  {
+    "id": "skin",
+    "title": "Living patterns",
+    "model": "reaction",
+    "hint": "Touch the surface. Watch the pattern grow.",
+    "idea": "Two substances spread and react at different rates. Their local interactions can produce spots and stripes."
+  },
+  {
+    "id": "ecosystem",
+    "title": "Ecosystem",
+    "model": "ecosystem",
+    "hint": "Change the balance of rabbits and foxes.",
+    "idea": "More rabbits provide food for foxes. More foxes can reduce the number of rabbits. The two populations affect each other."
+  },
+  {
+    "id": "sand",
+    "title": "Avalanche",
+    "model": "sand",
+    "hint": "Drop grains and watch the pile change.",
+    "idea": "A few extra grains can trigger a cascade. Small changes sometimes produce unexpectedly large effects."
   },
   {
     "id": "first",
