@@ -13,4 +13,8 @@ function send(method,params={}){return new Promise((resolve,reject)=>{const i=++
 await send('Page.enable');await send('Emulation.setDeviceMetricsOverride',{width:800,height:1200,deviceScaleFactor:1,mobile:true});await send('Page.navigate',{url:target});
 let state;for(let i=0;i<40;i++){await pause(500);state=(await send('Runtime.evaluate',{expression:'({url:location.href,ready:document.readyState,title:document.title,manifest:document.querySelector(\'link[rel="manifest"]\')?.href,install:!!document.querySelector("#install")&&!document.querySelector("#install").hidden,sw:!!navigator.serviceWorker?.controller})',returnByValue:true})).result.value;if(state?.ready==='complete'&&state?.manifest&&state?.sw)break}console.log('Page:',state);
 const manifest=await send('Page.getAppManifest');console.log('Manifest:',JSON.stringify(manifest));const errors=await send('Page.getInstallabilityErrors');console.log('Installability:',JSON.stringify(errors));if(errors.installabilityErrors.length||!state?.install||!state?.sw||state?.title!=='Projects')throw Error('Projects is not installable in Chromium');console.log('PASS: installable manifest, visible button and active service worker.');
+const idUrl=manifest.manifest.id;
+await send('PWA.install',{manifestId:idUrl,installUrlOrBundleUrl:target});
+const stateAfter=await send('PWA.getOsAppState',{manifestId:idUrl});
+console.log('PASS: Chrome installed Projects:',JSON.stringify(stateAfter));
 }finally{ws?.close();chrome.kill();await pause(300);await rm(profile,{recursive:true,force:true}).catch(()=>{})}

@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/projects-install-check.yml"
       - "engine/public/projects/**"
+      - "engine/scripts/check-projects-install.mjs"
   workflow_dispatch:
 permissions:
   contents: read
